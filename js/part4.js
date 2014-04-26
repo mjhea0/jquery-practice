@@ -10,15 +10,15 @@ var burnsImg = 'img/burns.png';
 var imgWidth = 150
 var imgHeight = 50
 
-var penaltyPoints = -30;
-var hitPoints     =  10;
-
 var homerProbability          = 0.2;
 var appearanceDuration        = 2000;
 var averageDelayBetweenImages = 400;
 
 var score = 0;
 var finalScore;
+
+var hitPoints = 10
+var penaltyPoints = -30
 
 /***************************************************/  
 
@@ -43,9 +43,9 @@ function randomPosition (theImage) {
 function generateImage () {
 
   if (Math.random() < homerProbability) {
-    theImage = $('<img class="homer" src="img/homer.png" />');
+    theImage = $('<img class="homer" src="img/homer.png">');
   } else {
-    theImage = $('<img class="burns"  src="img/burns.png" />');
+    theImage = $('<img class="burns" src="img/burns.png">');
   }
   return theImage
 };
@@ -65,10 +65,12 @@ function gameLoop () {
 function imgClicked () {
   console.log($(this))
   $(this).remove(); // Do you understand $(this) yet?
-  if ($(this).hasClass('.homer')) {
+  if ($(this).hasClass('homer')) {
     score += penaltyPoints;
+    $('.dope').show()
   } else {
     score += hitPoints;
+    $('.dope').hide()
   }
   finalScore.html(score);
 };
@@ -78,6 +80,7 @@ function imgClicked () {
 $(function () {
     
   finalScore = $('#score');
+  $('.dope').hide()
   
   $('body').on('click', '.homer, .burns', imgClicked);
   

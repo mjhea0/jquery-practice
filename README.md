@@ -1,6 +1,6 @@
 # jQuery Practice
 
-1. Open *start_here.html*
+1. Open *index.html*
 2. Start with Part 1
 3. Look at the final output
 4. Recreate the code

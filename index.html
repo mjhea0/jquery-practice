@@ -3,28 +3,53 @@
   <head>
     <title>jQuery Practice - home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
       .container {
         padding-top: 25px;
-        max-width: 500px;
-        text-align: center;
+      }
+      img {
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Welcome!</h1>
-      <h2 class="lead">Let's practice some jQuery.</h2>
-      <img src="img/homer.png">
-      <h3>
-        <a href="part1.html">Part 1</a> &ndash;
-        <a href="part2.html">Part 2</a> &ndash;
-        <a href="part3.html">Part 3</a> &ndash;
-        <a href="part4.html">Part 4</a>
-      </h3>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <center>
+            <h1>Welcome!</h1>
+            <h2 class="lead">Let's practice some jQuery.<br>(click Homer for directions)</h2>
+            <h4>
+              <a href="part1.html">Part 1</a> &ndash;
+              <a href="part2.html">Part 2</a> &ndash;
+              <a href="part3.html">Part 3</a> &ndash;
+              <a href="part4.html">Part 4</a>
+            </h4>
+          </center>
+          <div class="directions-list">
+            <p>
+              <h3>Directions</h3>
+              <ol>
+                <li>Start with Part 1</li>
+                <li>Open the page in your browser to test out the final output</li>
+                <li>Recreate the Javascript/jQuery code on your own</li>
+                <li>Only look at my code once complete or if you get stuck</li>
+                <li>Don't move on until you fully understand Part 1</li>
+                <li>Repeat for all parts</li>
+              </ol>
+            </p>
+          </div>
+          <br>
+          <center>
+            <img src="img/homer.png">
+          </center>
+        </div>
+      </div>
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </center>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
