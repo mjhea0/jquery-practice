@@ -1,6 +1,7 @@
 # jQuery Practice
 
-1. Download the repo [here](https://github.com/mjhea0/jquery-practice/archive/master.zip), unpack the files, make sure Part 1 works on your local machine
+1. Download the repo [here](https://github.com/mjhea0/jquery-practice/archive/master.zip) and unpack the files
+1. Open *index.html*
 1. Click the link for Part 1 to view the Javascript behavior in the browser
 1. Remove the link to *part1.js* from your HTML file
 1. Recreate the Javascript/jQuery code in *main1.js*
