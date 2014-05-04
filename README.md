@@ -1,5 +1,7 @@
 # jQuery Practice
 
+## Directions
+
 1. Download the repo [here](https://github.com/mjhea0/jquery-practice/archive/master.zip) and unpack the files
 1. Open *index.html*
 1. Click the link for Part 1 to view the Javascript behavior in the browser
@@ -9,3 +11,8 @@
 1. Don't move on until you fully understand Part 1
 1. Repeat for all parts
 1. Want more? Recreate the HTML and CSS too!
+
+## Links
+
+- View it live - [http://www.realpython.com/learn/jquery-practice](http://www.realpython.com/learn/jquery-practice)
+- Repo - https://github.com/mjhea0/jquery-practice
