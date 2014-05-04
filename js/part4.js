@@ -17,8 +17,8 @@ var averageDelayBetweenImages = 400;
 var score = 0;
 var finalScore;
 
-var hitPoints = 10
-var penaltyPoints = -30
+var hitPoints = 1
+var penaltyPoints = -3
 
 /***************************************************/  
 
@@ -67,20 +67,34 @@ function imgClicked () {
   $(this).remove(); // Do you understand $(this) yet?
   if ($(this).hasClass('homer')) {
     score += penaltyPoints;
-    $('.dope').show()
+    dohSound()
+    $('.doh').show()
   } else {
     score += hitPoints;
-    $('.dope').hide()
+    burnsSound()
+    $('.doh').hide()
   }
   finalScore.html(score);
 };
+
+function dohSound () {
+  $('#doh-sound')[0].volume = 0.5;
+  $('#doh-sound')[0].load();
+  $('#doh-sound')[0].play();
+}
+
+function burnsSound () {
+  $('#burns-sound')[0].volume = 1;
+  $('#burns-sound')[0].load();
+  $('#burns-sound')[0].play();
+}
 
 /***************************************************/  
 
 $(function () {
     
   finalScore = $('#score');
-  $('.dope').hide()
+  $('.doh').hide()
   
   $('body').on('click', '.homer, .burns', imgClicked);
   

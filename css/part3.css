@@ -1,0 +1,32 @@
+html { 
+  background: url(../img/bg.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body, h1, h2, h3, h4 {
+  font-family: 'Indie Flower', cursive;
+  background-color: transparent;
+}
+img {
+  max-height: 250px;
+  max-width: auto;
+}
+#main {
+  background-color: white;
+  padding: 2.5%;
+  opacity: .85;
+  border: 2px solid black;
+}
+.container {
+  padding-top: 25px;
+  max-width: 700px;
+  text-align: center;
+}
+.homer, .burns{
+  display: block;
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+}
