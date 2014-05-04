@@ -1,5 +1,7 @@
 # jQuery Practice
 
+Practice your jQuery skills with a little help from the Simpsons.
+
 ## Directions
 
 1. Download the repo [here](https://github.com/mjhea0/jquery-practice/archive/master.zip) and unpack the files
