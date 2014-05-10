@@ -18,3 +18,7 @@ Practice your jQuery skills with a little help from the Simpsons.
 
 - View it live - [http://www.realpython.com/learn/jquery-practice](http://www.realpython.com/learn/jquery-practice)
 - Repo - https://github.com/mjhea0/jquery-practice
+
+## Real Python
+
+This ia a companion piece to <a href="http://www.realpython.com">Real Python</a>.
